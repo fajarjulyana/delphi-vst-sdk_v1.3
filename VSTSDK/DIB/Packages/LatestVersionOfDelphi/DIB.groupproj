@@ -1,0 +1,49 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{6f5fa752-aef7-44a4-a30e-c67eb638f465}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="DIBRuntime">
+    <MSBuild Projects="DIBRuntime.dproj" Targets="" />
+  </Target>
+  <Target Name="DIBRuntime:Clean">
+    <MSBuild Projects="DIBRuntime.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="DIBRuntime:Make">
+    <MSBuild Projects="DIBRuntime.dproj" Targets="Make" />
+  </Target>
+  <Target Name="DIBPNGSupport">
+    <MSBuild Projects="DIBPNGSupport.dproj" Targets="" />
+  </Target>
+  <Target Name="DIBPNGSupport:Clean">
+    <MSBuild Projects="DIBPNGSupport.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="DIBPNGSupport:Make">
+    <MSBuild Projects="DIBPNGSupport.dproj" Targets="Make" />
+  </Target>
+  <Target Name="DIBInstall">
+    <MSBuild Projects="DIBInstall.dproj" Targets="" />
+  </Target>
+  <Target Name="DIBInstall:Clean">
+    <MSBuild Projects="DIBInstall.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="DIBInstall:Make">
+    <MSBuild Projects="DIBInstall.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="DIBRuntime;DIBPNGSupport;DIBInstall" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="DIBRuntime:Clean;DIBPNGSupport:Clean;DIBInstall:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="DIBRuntime:Make;DIBPNGSupport:Make;DIBInstall:Make" />
+  </Target>
+</Project>

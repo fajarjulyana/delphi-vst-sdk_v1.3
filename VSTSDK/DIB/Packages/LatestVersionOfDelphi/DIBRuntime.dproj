@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{c6c6fc72-bc82-42ff-ae0a-879558eb3ce0}</ProjectGuid>
+    <MainSource>DIBRuntime.dpk</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>C:\Documents and Settings\All Users\Documents\RAD Studio\5.0\Bpl\DIBRuntime.bpl</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>Package</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><Package_Options><Package_Options Name="PackageDescription">Droopy eyes - DIBControls</Package_Options><Package_Options Name="ImplicitBuild">True</Package_Options><Package_Options Name="DesigntimeOnly">False</Package_Options><Package_Options Name="RuntimeOnly">False</Package_Options></Package_Options><VersionInfo><VersionInfo Name="IncludeVerInfo">False</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">2057</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">DIBRuntime.dpk</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="DIBRuntime.dpk">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="..\..\OpenSource\DIBLZH.PAS" />
+    <DCCReference Include="..\..\PictureFormats\DIBPCXFormat.pas" />
+    <DCCReference Include="..\..\PictureFormats\DIBRSBFormat.pas" />
+    <DCCReference Include="..\..\Source\cDIB.pas" />
+    <DCCReference Include="..\..\Source\cDIBAnimContainer.dcr" />
+    <DCCReference Include="..\..\Source\cDIBAnimContainer.dcr" />
+    <DCCReference Include="..\..\Source\cDIBAnimContainer.pas" />
+    <DCCReference Include="..\..\Source\cDIBAnimMgr.dcr" />
+    <DCCReference Include="..\..\Source\cDIBAnimMgr.dcr" />
+    <DCCReference Include="..\..\Source\cDIBAnimMgr.pas" />
+    <DCCReference Include="..\..\Source\cDIBBorder.dcr" />
+    <DCCReference Include="..\..\Source\cDIBBorder.dcr" />
+    <DCCReference Include="..\..\Source\cDIBBorder.pas" />
+    <DCCReference Include="..\..\Source\cDIBButton.dcr" />
+    <DCCReference Include="..\..\Source\cDIBButton.dcr" />
+    <DCCReference Include="..\..\Source\cDIBButton.pas" />
+    <DCCReference Include="..\..\Source\cDIBCompressor.pas" />
+    <DCCReference Include="..\..\Source\cDIBControl.pas" />
+    <DCCReference Include="..\..\Source\cDIBDial.dcr" />
+    <DCCReference Include="..\..\Source\cDIBDial.dcr" />
+    <DCCReference Include="..\..\Source\cDIBDial.pas" />
+    <DCCReference Include="..\..\Source\cDIBEdit.dcr" />
+    <DCCReference Include="..\..\Source\cDIBEdit.dcr" />
+    <DCCReference Include="..\..\Source\cDIBEdit.pas" />
+    <DCCReference Include="..\..\Source\cDIBFadeLabel.dcr" />
+    <DCCReference Include="..\..\Source\cDIBFadeLabel.dcr" />
+    <DCCReference Include="..\..\Source\cDIBFadeLabel.pas" />
+    <DCCReference Include="..\..\Source\cDIBFeatures.pas" />
+    <DCCReference Include="..\..\Source\cDIBFormat.pas" />
+    <DCCReference Include="..\..\Source\cDIBFormShaper.dcr" />
+    <DCCReference Include="..\..\Source\cDIBFormShaper.dcr" />
+    <DCCReference Include="..\..\Source\cDIBFormShaper.pas" />
+    <DCCReference Include="..\..\Source\cDIBGlyphButton.pas" />
+    <DCCReference Include="..\..\Source\cDIBImage.dcr" />
+    <DCCReference Include="..\..\Source\cDIBImage.dcr" />
+    <DCCReference Include="..\..\Source\cDIBImage.pas" />
+    <DCCReference Include="..\..\Source\cDIBImageList.dcr" />
+    <DCCReference Include="..\..\Source\cDIBImageList.dcr" />
+    <DCCReference Include="..\..\Source\cDIBImageList.pas" />
+    <DCCReference Include="..\..\Source\cDIBKnob.dcr" />
+    <DCCReference Include="..\..\Source\cDIBKnob.dcr" />
+    <DCCReference Include="..\..\Source\cDIBKnob.pas" />
+    <DCCReference Include="..\..\Source\cDIBMagnifier.dcr" />
+    <DCCReference Include="..\..\Source\cDIBMagnifier.dcr" />
+    <DCCReference Include="..\..\Source\cDIBMagnifier.pas" />
+    <DCCReference Include="..\..\Source\cDIBPalette.dcr" />
+    <DCCReference Include="..\..\Source\cDIBPalette.dcr" />
+    <DCCReference Include="..\..\Source\cDIBPalette.pas" />
+    <DCCReference Include="..\..\Source\cDIBPanel.dcr" />
+    <DCCReference Include="..\..\Source\cDIBPanel.dcr" />
+    <DCCReference Include="..\..\Source\cDIBPanel.pas" />
+    <DCCReference Include="..\..\Source\cDIBSettings.dcr" />
+    <DCCReference Include="..\..\Source\cDIBSettings.dcr" />
+    <DCCReference Include="..\..\Source\cDIBSettings.pas" />
+    <DCCReference Include="..\..\Source\cDIBSlider.dcr" />
+    <DCCReference Include="..\..\Source\cDIBSlider.dcr" />
+    <DCCReference Include="..\..\Source\cDIBSlider.pas" />
+    <DCCReference Include="..\..\Source\cDIBStandardCompressors.pas" />
+    <DCCReference Include="..\..\Source\cDIBStandardFilters.pas" />
+    <DCCReference Include="..\..\Source\cDIBTimer.dcr" />
+    <DCCReference Include="..\..\Source\cDIBTimer.dcr" />
+    <DCCReference Include="..\..\Source\cDIBTimer.pas" />
+    <DCCReference Include="..\..\Source\cDIBWavList.dcr" />
+    <DCCReference Include="..\..\Source\cDIBWavList.dcr" />
+    <DCCReference Include="..\..\Source\cDIBWavList.pas" />
+    <DCCReference Include="..\..\Source\cmpLZH.pas" />
+    <DCCReference Include="..\..\Source\DIBCommon.pas" />
+    <DCCReference Include="rtl.dcp" />
+    <DCCReference Include="vcl.dcp" />
+    <DCCReference Include="vcljpg.dcp" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{83f1945a-0b7a-4df9-be07-0ac1c3a56323}</ProjectGuid>
+    <MainSource>DIBInstall.dpk</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>C:\Documents and Settings\All Users\Documents\RAD Studio\5.0\Bpl\DIBInstall.bpl</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>Package</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><Package_Options><Package_Options Name="PackageDescription">Droopy eyes - DIBControls</Package_Options><Package_Options Name="ImplicitBuild">True</Package_Options><Package_Options Name="DesigntimeOnly">True</Package_Options><Package_Options Name="RuntimeOnly">False</Package_Options></Package_Options><VersionInfo><VersionInfo Name="IncludeVerInfo">False</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">2057</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">DIBInstall.dpk</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="DIBInstall.dpk">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="..\..\Editors\DIBAnimContainerEditor.pas">
+      <Form>fmSnapshotEditor</Form>
+    </DCCReference>
+    <DCCReference Include="..\..\Editors\DIBAnimEditor.pas">
+      <Form>fmAnimEditor</Form>
+    </DCCReference>
+    <DCCReference Include="..\..\Editors\DIBCommonEditors.pas" />
+    <DCCReference Include="..\..\Editors\DIBCompressorEditor.pas">
+      <Form>fmSelectCompressor</Form>
+    </DCCReference>
+    <DCCReference Include="..\..\Editors\DIBControlEditor.pas" />
+    <DCCReference Include="..\..\Editors\DIBEditor.pas">
+      <Form>fmDIBEditor</Form>
+    </DCCReference>
+    <DCCReference Include="..\..\Editors\DIBEditorsReg.pas" />
+    <DCCReference Include="..\..\Editors\DIBFeatureEditor.pas" />
+    <DCCReference Include="..\..\Editors\DIBImageIndexEditor.pas">
+      <Form>fmImageIndexEditor</Form>
+    </DCCReference>
+    <DCCReference Include="..\..\Editors\DIBPaletteEditor.pas">
+      <Form>fmDIBPaletteEditor</Form>
+    </DCCReference>
+    <DCCReference Include="..\..\Editors\DIBreg.pas" />
+    <DCCReference Include="..\..\Editors\DIBWavEditor.pas">
+      <Form>fmDIBWavEditor</Form>
+    </DCCReference>
+    <DCCReference Include="..\..\OpenSource\DIBOpenTools.pas" />
+    <DCCReference Include="..\..\OpenSource\DIBPasParser.pas" />
+    <DCCReference Include="..\..\OpenSource\DIBStrConst.pas" />
+    <DCCReference Include="..\..\Source\DIBCursors.res" />
+    <DCCReference Include="..\..\Source\DIBCursors.res" />
+    <DCCReference Include="designide.dcp" />
+    <DCCReference Include="DIBPNGSupport.dcp" />
+    <DCCReference Include="DIBRuntime.dcp" />
+    <DCCReference Include="rtl.dcp" />
+    <DCCReference Include="vcl.dcp" />
+    <DCCReference Include="vclactnband.dcp" />
+    <DCCReference Include="vcljpg.dcp" />
+    <DCCReference Include="vclsmp.dcp" />
+    <DCCReference Include="vclx.dcp" />
+  </ItemGroup>
+</Project>
